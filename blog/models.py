@@ -25,6 +25,6 @@ class Comment(models.Model):
         User, on_delete=models.CASCADE, related_name="commenter"
     )
     body = models.TextField()
-    approved = BooleanField(default=False)
+    approved = models.BooleanField(default=False)
     created_on = models.DateTimeField(auto_now_add=True)
 
